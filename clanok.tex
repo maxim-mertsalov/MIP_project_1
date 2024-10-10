@@ -1,0 +1,150 @@
+% Metódy inžinierskej práce
+
+\documentclass[10pt,twoside,a4paper,english]{article}
+
+\usepackage[slovak]{babel}
+%\usepackage[T1]{fontenc}
+\usepackage[IL2]{fontenc} % lepšia sadzba písmena Ľ než v T1
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{url} % príkaz \url na formátovanie URL
+\usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
+\graphicspath{ {./assets/} }
+
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	total={170mm,257mm},
+	left=20mm,
+	top=20mm,
+}
+
+\usepackage{cite}
+\usepackage{times}
+
+\pagestyle{headings}
+
+
+\title{Deep Learning vs. Machine Learning in digital marketing \thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2024/25, vedenie: Yevheniia Kataieva}} % meno a priezvisko vyučujúceho na cvičeniach
+
+\author{Maksym Mertsalov\\[2pt]
+{\small Slovenská technická univerzita v Bratislave}\\
+{\small Fakulta informatiky a informačných technológií}\\
+{\small \texttt{xmertsalov@stuba.sk}}
+}
+
+\date{\small 09. september 2024} % upravte
+
+
+\begin{document}
+
+	\maketitle
+
+	\begin{abstract}
+		In today’s world, life without advertising is almost unimaginable. Advertising has become a fundamental part of human activity, shaping and influencing the development of all areas of life. Over centuries, advertising and human society have evolved together, responding to the changing needs and desires of people. However, the rise of digital and online advertising has made managing and regulating it increasingly complex.
+		Challenges in online advertising are numerous, including aligning ads with users' interests, filtering unnecessary traffic, accurately displaying search queries, and effectively tracking ad performance. As online advertising expands, the need for advanced solutions to these problems becomes ever more urgent.
+		This article explores the best practices for developing an online advertising monitoring and promotion system powered by Artificial Intelligence (AI) and advanced algorithms. We’ll cover technologies like natural language processing (NLP) for content analysis, pattern recognition to detect trends, machine learning and deep learning for improved ad targeting and performance prediction, and data tracking for comprehensive monitoring.
+		This article is ideal for those aiming to optimize their advertising platforms. Whether you're seeking to improve ad accuracy, modernize data management, or stay competitive in the fast-evolving online advertising industry, you'll find valuable strategies here to elevate your ad systems\ldots
+	\end{abstract}
+
+
+
+	\section{Introduction(first small version)}
+	\begingroup
+	Since the first brands emerged more than two centuries ago, advertising has undergone significant changes. Companies used to use newspapers, magazines, flyers, billboards and marketing calls to spread their messages. Later, they moved to mass media: television and radio.\par
+
+	However, digital technology is facilitating the emergence of a third sector: the online space. Search engines, websites and social media make advertising more ubiquitous than ever. \par
+
+	Artificial intelligence has become a real force, changing the landscape once again. Bringing higher intelligence to the digital world is enabling advances that were impossible when humans controlled the show. But artificial intelligence is only a small part of what's behind the logic of advertising in big services. Let's discuss machine learning, deep learning, artificial intelligence and more in the digital world below.\cite{10314235}\par
+
+	\endgroup
+
+	\begin{figure*}[tbh]
+		\centering
+		\includegraphics[scale=0.7]{diagram_test1.pdf}
+		\caption{Some people}
+	\end{figure*}
+
+	\section{Some test paragraph}
+	This is TEXT and this too \newline
+	Input: \input{new.tex}
+
+
+	\section{Nejaká časť} \label{nejaka}
+
+	Z obr.~\ref{f:rozhod} je všetko jasné.
+
+	\begin{figure*}[tbh]
+		\centering
+		\includegraphics[scale=0.7]{diagram_test.pdf}
+		Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
+		\caption{Some diagrams.}
+		\label{f:rozhod}
+	\end{figure*}
+
+
+
+	\section{Iná časť} \label{ina}
+
+	Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
+
+	Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
+
+
+	\subsection{Nejaké vysvetlenie} \label{ina:nejake}
+
+	Niekedy treba uviesť zoznam:
+
+	\begin{itemize}
+		\item jedna vec
+		\item druhá vec
+		\begin{itemize}
+			\item x
+			\item y
+		\end{itemize}
+	\end{itemize}
+
+	Ten istý zoznam, len číslovaný:
+
+	\begin{enumerate}
+		\item jedna vec
+		\item druhá vec
+		\begin{enumerate}
+			\item x
+			\item y
+		\end{enumerate}
+	\end{enumerate}
+
+
+	\subsection{Ešte nejaké vysvetlenie} \label{ina:este}
+
+	\paragraph{Veľmi dôležitá poznámka.}
+	Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom.
+
+
+
+	\section{Dôležitá časť} \label{dolezita}
+
+
+
+
+	\section{Ešte dôležitejšia časť} \label{dolezitejsia}
+
+
+
+
+	\section{Záver} \label{zaver} % prípadne iný variant názvu
+
+	\begin{figure*}[tbh]
+		\centering
+		\includegraphics[scale=0.8]{logo_fiit.pdf}
+		\caption{Made by STU FIIT student}
+	\end{figure*}
+
+%\acknowledgement{Ak niekomu chcete poďakovať\ldots}
+
+
+% týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
+	\bibliography{literatura}
+	\bibliographystyle{abbrv} % prípadne alpha, abbrv alebo hociktorý iný. default: plain
+\end{document}
