@@ -1,0 +1,1 @@
+git commit -m "Change 2 collumns to 1 && add git_log.txt, SCRUM-11"
